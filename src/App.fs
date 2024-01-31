@@ -18,6 +18,7 @@ let update (msg: Msg) (model: Model) =
 
 let view (model: Model) (dispatch: Msg -> unit) =
     Html.div [
+        Html.h1 "Fable + Elmish + Feliz"
         Html.button [ prop.onClick (fun _ -> dispatch Increment); prop.text "Increment" ]
 
         Html.button [ prop.onClick (fun _ -> dispatch Decrement); prop.text "Decrement" ]
